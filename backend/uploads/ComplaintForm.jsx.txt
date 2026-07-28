@@ -1,0 +1,16 @@
+See the accompanying JSX code below. Replace this file with the version
+supplied in chat if needed.
+
+function ComplaintForm({ formData, setFormData }) { const handleChange =
+(e) => { setFormData({ …formData, [e.target.name]: e.target.value, });
+};
+
+const saveComplaint = async () => { try { const response = await
+fetch(“http://127.0.0.1:8000/complaint/save”, { method: “POST”, headers:
+{ “Content-Type”: “application/json” }, body: JSON.stringify(formData),
+}); await response.json(); alert(“Complaint saved successfully.”); }
+catch (error) { console.error(error); alert(“Failed to save
+complaint.”); } };
+
+// …keep the remainder of your existing JSX exactly as it is… // Replace
+only the Save button to call saveComplaint. }
