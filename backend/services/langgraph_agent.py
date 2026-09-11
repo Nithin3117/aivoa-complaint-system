@@ -50,3 +50,4 @@ Complaint:
         content = content.replace("```", "")
 
     return json.loads(content)
+    
