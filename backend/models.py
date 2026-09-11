@@ -26,3 +26,4 @@ class Complaint(Base):
     severity = Column(String(50))
 
     priority = Column(String(50))
+    
