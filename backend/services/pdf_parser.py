@@ -28,3 +28,4 @@ def extract_text_from_docx(file_path):
         text += paragraph.text + "\n"
 
     return text.strip()
+    
