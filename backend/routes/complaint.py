@@ -75,3 +75,4 @@ async def save(data: dict):
         "status": "success",
         "data": data
     }
+    
